@@ -24,8 +24,7 @@ import org.pure4j.processor.SpringProjectModelFactory;
 
 @Mojo(name = "pure4j", 
 	defaultPhase=LifecyclePhase.VERIFY, 
-	requiresDependencyResolution=ResolutionScope.RUNTIME, 
-	
+	requiresDependencyResolution=ResolutionScope.RUNTIME,
 	requiresProject=true)
 public class Pure4JProcessMojo extends AbstractMojo {
 	

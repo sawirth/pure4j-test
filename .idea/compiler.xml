@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pure4j-checker" />
+        <module name="pure4j-core" />
+        <module name="pure4j-examples" />
+        <module name="pure4j-maven-plugin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="pure4j" target="1.8" />
+      <module name="pure4j-checker" target="1.8" />
+      <module name="pure4j-core" target="1.8" />
+      <module name="pure4j-examples" target="1.8" />
+      <module name="pure4j-maven-plugin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -32,7 +32,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.Objects;
+//import java.util.Objects;
 import java.util.Set;
 import java.util.Stack;
 import java.util.StringTokenizer;
@@ -40,7 +40,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.Vector;
 
-import javafx.scene.shape.Box;
+//import javafx.scene.shape.Box;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -146,7 +146,7 @@ public class JavaStandardLibraryPurity {
 						ArrayChunk.class,
 						ArraySeq.class,
 						ASeq.class,
-						Box.class,
+//						Box.class,
 						Cons.class,
 						Counted.class,
 						Hasher.class,
@@ -208,7 +208,7 @@ public class JavaStandardLibraryPurity {
 
 	protected List<Class<?>> javaUtilClasses() {
 		return Arrays.asList(
-		Objects.class, 
+		//Objects.class,
 		AbstractSet.class,
 		AbstractCollection.class, 
 		AbstractMap.class,
@@ -247,7 +247,7 @@ public class JavaStandardLibraryPurity {
 		PrintWriter.class);
 	}
 	
-	protected List<Class<?>> javaNetClasses() {
+	protected List<Class<URI>> javaNetClasses() {
 	
 		return Arrays.asList(URI.class);
 	}
@@ -271,7 +271,7 @@ public class JavaStandardLibraryPurity {
 		Void.class);
 	}
 	
-	protected List<Class<?>>  otherClasses() {
+	protected List<Class<Assert>> otherClasses() {
 		return Arrays.asList(Assert.class);
 	}
 	
