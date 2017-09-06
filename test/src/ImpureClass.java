@@ -1,6 +1,5 @@
-import org.pure4j.annotations.immutable.ImmutableValue;
+import org.springframework.util.StopWatch;
 
-@ImmutableValue
 public class ImpureClass {
     private final int value = 0;
 
@@ -34,5 +33,11 @@ public class ImpureClass {
         return "ImpureClass{" +
                 "value=" + value +
                 '}';
+    }
+
+    public void randomMethod() {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
+        stopWatch.stop();
     }
 }

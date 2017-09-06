@@ -1,8 +1,7 @@
 import org.pure4j.annotations.immutable.ImmutableValue;
 
-@ImmutableValue
 public class ClassToTest {
-    private int id;
+    private final int id;
     private String name;
     private int age;
     private ImpureClass impureClass;
@@ -19,8 +18,6 @@ public class ClassToTest {
     }
 
     public void setId(int id) {
-//        System.out.println(id);
-        this.id = id;
     }
 
     public String getName() {

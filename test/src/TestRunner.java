@@ -7,6 +7,8 @@ import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 
 import java.io.IOException;
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.util.*;
 
 public class TestRunner {
@@ -28,7 +30,7 @@ public class TestRunner {
             checker.checkModel(pm, cb);
             pures.forEach(System.out::println);
         } catch (IOException ex) {
-
+            ex.printStackTrace();
         }
 
     }

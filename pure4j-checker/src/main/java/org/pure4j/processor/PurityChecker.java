@@ -241,7 +241,7 @@ public class PurityChecker implements Rule {
 
 	private void addPureMethodsToPureList(ProjectModel pm, Callback cb) {
 		cb.send("@Pure methods:");
-		for (MemberHandle handle : pm.getMembersWithAnnotation(getInternalName(Pure.class))) {
+		for (MemberHandle handle : pm.getAllDeclaredMethods()) {
 			if (handle instanceof ImplementationHandle) {
 				Class<?> class1 = handle.getDeclaringClass(cl);
 				registerMethodWithCorrectEnforcement(class1, cb, handle);
